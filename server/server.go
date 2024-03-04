@@ -21,7 +21,7 @@ func (s *Server) Start() error {
 
 	router.LoadHTMLGlob("./templates/*")
 
-	router.GET("/", handleHome)
+	router.GET("/", handleIndex)
 
 	router.GET("/ping", handlePing)
 
